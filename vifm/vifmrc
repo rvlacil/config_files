@@ -348,7 +348,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" windo set viewcolumns=-{name}..,6{}.
+windo set viewcolumns=-{name}..,{size},10.8{uname},10.8{gname},12.11{perms}
 
 " Filter-out build and temporary files
 "
@@ -388,7 +388,7 @@ nnoremap cc cw<c-u>
 nnoremap A cw<c-w>
 
 " Open console in current directory
-nnoremap ,t :!xterm &<cr>
+nnoremap ,t :!konsole &<cr>
 
 " Open vim to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | execute ':!vim $MYVIFMRC' | restart<cr>
