@@ -1,0 +1,18 @@
+"3.9 (created: 2015/02/15 15:49:05)
+
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+source! "C:\\Users\\radekv\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+
+nnoremap h 5h
+nnoremap j 5j
+nnoremap k 5k
+nnoremap l 5l
+
+nmap L :tn<CR>
+nmap H :tp<CR>
+nmap J :back<CR>
+nmap K :forward<CR>
+
+highlight Hint -append font-size:16px;
