@@ -101,13 +101,15 @@ bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace skype
-bindsym $mod+8 workspace www
-bindsym $mod+9 workspace mail
-bindsym $mod+0 workspace spotify
+bindsym $mod+7 workspace "7:www"
+bindsym $mod+8 workspace "8:skype"
+bindsym $mod+9 workspace "9:mail"
+bindsym $mod+0 workspace "10:spotify"
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+Control+h workspace prev_on_output
+bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
+bindsym $mod+Control+Right workspace next_on_output
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -116,10 +118,10 @@ bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace skype
-bindsym $mod+Shift+8 move container to workspace www
-bindsym $mod+Shift+9 move container to workspace mail
-bindsym $mod+Shift+0 move container to workspace spotify
+bindsym $mod+Shift+7 move container to workspace "7:www"
+bindsym $mod+Shift+8 move container to workspace "8:skype"
+bindsym $mod+Shift+9 move container to workspace "9:mail"
+bindsym $mod+Shift+0 move container to workspace "10:spotify"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -164,4 +166,5 @@ setxkbmap -option 'grp:alt_shift_toggle'
 # finds out, if available)
 bar {
         status_command i3status --config ~/.i3/i3status.conf
+        strip_workspace_numbers yes
 }

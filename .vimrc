@@ -1,6 +1,6 @@
 set nocompatible
 set modelines=5
-colorscheme peachpuff
+colorscheme elflord
 set number
 set bs=indent,eol,start
 " lepsi podpora copy/paste v xtermu
