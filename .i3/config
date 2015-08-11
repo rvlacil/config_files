@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -95,32 +95,33 @@ bindsym $mod+grave exec "~/.i3/select_first_empty.py"
 bindsym $mod+t exec "~/.i3/select_workspace_name.py"
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace "7:www"
-bindsym $mod+8 workspace "8:skype"
-bindsym $mod+9 workspace "9:mail"
-bindsym $mod+0 workspace "10:spotify"
+bindsym $mod+F1 workspace 1
+bindsym $mod+F2 workspace 2
+bindsym $mod+F3 workspace 3
+bindsym $mod+F4 workspace 4
+bindsym $mod+F5 workspace 5
+bindsym $mod+F6 workspace 6
+bindsym $mod+F7 workspace "7:www"
+bindsym $mod+F8 workspace "8:skype"
+bindsym $mod+F9 workspace "9:mail"
+bindsym $mod+F10 workspace "10:spotify"
+
+bindsym $mod+1 exec "~/.i3/select_position.py 0"
+bindsym $mod+2 exec "~/.i3/select_position.py 1"
+bindsym $mod+3 exec "~/.i3/select_position.py 2"
+bindsym $mod+4 exec "~/.i3/select_position.py 3"
+bindsym $mod+5 exec "~/.i3/select_position.py 4"
+bindsym $mod+6 exec "~/.i3/select_position.py 5"
+bindsym $mod+7 exec "~/.i3/select_position.py 6"
+bindsym $mod+8 exec "~/.i3/select_position.py 7"
+bindsym $mod+9 exec "~/.i3/select_position.py 8"
+bindsym $mod+0 exec "~/.i3/select_position.py 9"
+
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+Control+h workspace prev_on_output
 bindsym $mod+Control+Left workspace prev_on_output
 bindsym $mod+Control+l workspace next_on_output
 bindsym $mod+Control+Right workspace next_on_output
-
-bindsym $mod+F1 exec "~/.i3/select_position.py 0"
-bindsym $mod+F2 exec "~/.i3/select_position.py 1"
-bindsym $mod+F3 exec "~/.i3/select_position.py 2"
-bindsym $mod+f4 exec "~/.i3/select_position.py 3"
-bindsym $mod+F5 exec "~/.i3/select_position.py 4"
-bindsym $mod+F6 exec "~/.i3/select_position.py 5"
-bindsym $mod+F7 exec "~/.i3/select_position.py 6"
-bindsym $mod+F8 exec "~/.i3/select_position.py 7"
-bindsym $mod+F9 exec "~/.i3/select_position.py 8"
-bindsym $mod+F10 exec "~/.i3/select_position.py 9"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
