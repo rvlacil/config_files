@@ -8,4 +8,4 @@ offset = int(sys.argv[1])
 workspaces = get_workspaces_list()
 
 if offset < len(workspaces):
-    subprocess.call(['i3-msg', 'workspace', get_workspaces_list()[offset]], stdout=subprocess.PIPE)
+    subprocess.call(['i3-msg', 'workspace', workspaces[offset]], stdout=subprocess.PIPE)
