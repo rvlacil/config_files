@@ -93,6 +93,7 @@ bindsym $mod+Tab focus output left
 
 bindsym $mod+grave exec "~/.i3/select_first_empty.py"
 bindsym $mod+t exec "~/.i3/select_workspace_name.py"
+bindsym $mod+Shift+t exec "~/.i3/move_to_workspace_name.py"
 
 # switch to workspace
 bindsym $mod+F1 workspace 1
