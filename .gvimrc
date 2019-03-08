@@ -2,6 +2,7 @@ set nocompatible
 set modelines=5
 colorscheme peachpuff
 set number
+set relativenumber
 set bs=indent,eol,start
 " lepsi podpora copy/paste v xtermu
 " set ttyfast
