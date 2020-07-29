@@ -122,7 +122,6 @@ fi
 #
 shopt -s autocd
 
-EDITOR=/usr/bin/vim
 alias vifm='vifm .'
 
 if [ -n "$INSIDE_VIFM" ]; then

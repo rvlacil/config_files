@@ -1,0 +1,16 @@
+[core]
+	eol = crlf
+	autocrlf = true
+[user]
+	email = radekv@microsoft.com
+	name = Radek Vlacil
+[push]
+	default = simple
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	lg = log --all --color --graph --pretty=format:'%C(bold blue)<%an>%Creset: %Cred%h%Creset - %C(yellow)%D%Creset %s %Cgreen(%cr)' --abbrev-commit
+[credential]
+	helper = cache --timeout 604800
