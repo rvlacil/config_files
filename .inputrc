@@ -6,6 +6,8 @@ set show-all-if-ambiguous on
 set completion-ignore-case on
 set menu-complete-display-prefix on
 set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e[2 q\2(cmd)"
+set vi-ins-mode-string "\1\e[6 q\2(ins)"
 
 set keymap vi-insert
 TAB: menu-complete-backward
